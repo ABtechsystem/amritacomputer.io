@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title> Amrita Computers and CSC </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
+  
+  
+  <style>
+  .nav {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ececec;
+  min-height: 50px;
+  height: auto;
+}
+.nav .nav-heading {float: left}
+
+.nav .nav-heading .toggle-nav {
+  padding: 2px 10px;
+  border-radius: 5px;
+  border: none;
+  display: none;
+  background-color: transparent;
+}
+.nav .nav-heading > a {
+  text-decoration: none;
+  color: #000;
+  line-height: 60px;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+/* Start menu */
+.nav .menu {
+  float: right;
+}
+.nav .menu:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.nav .list {
+  float: right;
+  margin: 0;
+}
+.nav .list > li {
+  float: left;
+  list-style: none;
+}
+.nav .list > li > a {
+  color: #555;
+  text-decoration: none;
+  display: block;
+  line-height: 60px;
+  padding: 0 10px;
+}
+.nav .list > li > a:hover,
+.nav .list > li.active > a {
+  color: #333
+}
+
+/* Start drodpwn menu */
+.categories {
+  position: relative;
+}
+.nav .list .categories .drop-down {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FFF;
+  border: 1px solid #ccc;
+  padding: 5px 0;
+  min-width: 160px;
+  width: auto;
+  white-space: nowrap;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  display: none;
+  z-index: 99999
+}
+.nav .list .drop-down > .seprator {
+  height: 1px;
+  width: 100%;
+  margin: 9px 0;
+  background-color: #e5e5e5
+}
+.drop-down > li > a {
+  color: #333;
+  display: block;
+  padding: 3px 20px;
+  text-decoration: none;
+}
+.show {
+  display: block
+}
+
+/* Sub dropdown menu */
+.categories .drop-down .sub-drop-down {position: relative}
+.categories .drop-down .sub-drop-down:hover .sub-dropdown {
+  display: block;
+}
+.categories .drop-down .sub-dropdown {
+  position: absolute;
+  top: -20px;
+  left: 107%;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 10px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  display: none;
+}
+.categories .drop-down .sub-dropdown:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #cccccc
+}
+.categories .drop-down .sub-dropdown > li > a {
+  color: #555;
+  padding: 5px 0;
+  display: block
+}
+/* End sub dropdown menu */
+/* Dark theme */
+.dark-nav {background-color: #f03340}
+
+.dark-nav .list > li > a {color: #ffB}
+
+.dark-nav .list > li > a:hover,
+.dark-nav .list > li.active > a {color: #FFF}
+
+.dark-nav .nav-heading > a {color: #EEE}
+
+.dark-nav .nav-heading .toggle-nav {color: #EEE}
+
+/* End Dark theme */
+
+/* Start media query for navbar */
+@media (max-width: 767px) {
+  .nav .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .nav .nav-heading {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #ffe7e7
+  }
+  .nav .nav-heading .brand {float: left}
+
+  .nav .nav-heading .toggle-nav {
+    display: block;
+    float: right;
+    margin-top: 14px;
+  }
+
+  .nav .menu {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: none;
+  }
+
+  .nav .list {
+    float: none;
+    width: 100%;
+  }
+  .nav .list > li {
+    float: none;
+    width: 100%;
+  }
+  .nav .list > li > a {padding: 12px 0;line-height: 1}
+
+  .nav .list .categories .drop-down {
+    background-color: transparent;
+    border: none;
+    position: static;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 0
+  }
+  .categories .drop-down .sub-dropdown {
+    position: static;
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-left: 20px;
+  }
+  .categories .drop-down .sub-dropdown > li > a {
+    color: #ff8;
+  }
+  .categories .drop-down .sub-dropdown:before {
+    display: none
+  }
+  /* Simple reset for dark theme */
+  .dark-nav .menu {background-color: #ff28ff}
+  .dark-nav .nav-heading {border-bottom-color: #ff343c}
+  .dark-nav .list .drop-down > li > a {color: #AAA}
+  .dark-nav .list .categories .drop-down .seprator {background-color: #2a2d38}
+
+}
+
+.eduprobanner {
+    width: 100%;
+    height: 223px;
+    background: url(img/edupro_banner.jpg) 50% 0% no-repeat;
+   
+}
+
+  </style>
+
+</head>
+
+<body>
+
+   
+   <nav class="nav  navbar-expand-lg dark-nav  navbar-fixed-top">
+    <div class="container">
+      <div class="nav-heading">
+        <button class="toggle-nav" data-toggle="open-navbar1"><i class="fa fa-align-right"></i></button>
+        <a class="brand" href="#"><img src="img/logo.jpg" style="width:70px;height:50px;"> Amrita Computers and CSC </a>
+      </div>
+      <div class="menu" id="open-navbar1">
+        <ul class=" list navbar-nav mr-auto ">
+          <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+          
+          <li class="nav-item"><a href="#" class="nav-link" >ABOUT US</a></li>
+          <li class="nav-item dropdown">
+		     <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" >SERVICES</a> 
+		      <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink1">
+                <a class="dropdown-item" href="rscit.html">RS-CIT </a>
+                <a class="dropdown-item" href="rscfa.html">RS-CFA</a>
+                <a class="dropdown-item" href="csc.html">CSC </a>
+				<a class="dropdown-item" href="e-mitra.html">E-Mitra </a>
+              </div>
+			  </li>
+          <li class="nav-item"><a href="#" class="nav-link" >CONTACT US</a></li>
+		  <li class="nav-item"><a href="#" class="nav-link" > SIGN IN </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+<div class="eduprobanner">
+    <div id="triangle-bottomleft" class="persdeta">
+        
+    </div>
+</div>
+
+<div class="container">
+        <div class="row">
+            <div class="enquiry MT3">
+
+                                        <h4 style='margin-top:50px;'>RS-CIT Introduction</h4>
+                        <p> <p >RS-CIT <strong >(Rajasthan State Certificate course in Information Technology) </strong>has been recognized by Dept. of Information Technology and Communication (DoIT&amp;C), Govt. of Rajasthan to propagate IT Literacy among the people of Rajasthan.</p>
+
+							<p >In order to bridge the Digital Divide, RKCL has launched an IT friendly course for the people of Rajasthan. RS-CIT is a high quality and low cost IT literacy program which offers a novel curriculum, excellent study material and learning management system in both local Hindi language and English. A state-of-the-art delivery mechanism leads to State University governed Examination and Certification.</p></p>
+                        
+                                                <h4>Course Objective</h4>
+                        <p><p>To empower citizens with fundamental understanding of Information Technology (I.T.) at affordable cost, acquiring essential skills to begin computing with confidence, be more productive at home and work and able to explore career opportunities globally.</p>
+
+<p><b>Eligibility :&nbsp;</b> Anyone who is literate &amp; has keen desire to learn Computer &amp; Information Technology</p>
+
+<p><strong>Course Duration :</strong> 3 Months or 132 Hours (2 hours per day 1 Hour Practical and 1 Hour Theory)</p>
+
+<p><strong>RS-CIT Course New Fees : Rs 3350 /- only per candidate however for eligible Govt. Employees, the course fees is Rs 2700/- per candidate only.</strong></p>
+
+<p><b style="margin: 0px; padding: 0px; font-size: 14px;">Course Medium : </b> Hindi &amp; English</p>
+</p>
+                        
+                                                <h4>Course Syllabus</h4>
+                        <p><table class="table table-striped table-bordered" id="example" style="width:100%">
+	<tbody>
+		<tr>
+			<th>Chapter No.</th>
+			<th>Chapter Name.</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>(Introduction to Computers)</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>(Computer System)</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>(Exploring your Computer)</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>(Introduction to Internet)</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>(Digital Payment and Platforms)</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>(Internet Applications)</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>(Digital Services for Citizens of Rajasthan)</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>(Accessing Citizen Service in Rajasthan)</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>(Exploring Common Citizen Centric Services)</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>(Working with Mobile Devices/Smartphones)</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>(Microsoft Word)</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>(Microsoft Excel)</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>(Microsoft Powerpoint)</td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td>(Cyber Security)</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>(Managing your Computer)</td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>(Getting More from your Computer)</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><strong>RS-CIT Syllabus</strong><a href="http://www.rkcl.in/myrkclwebsite/uploads/ckeditor/1552626554.pdf"> Click here </a></p>
+</p>
+                        
+                                                <h4>Study Material</h4>
+                        <p><p><span>One comprehensive printed book (Hindi or English) per candidate.</span></p>
+
+<p><span><img alt="" src="http://www.rkcl.in/myrkclwebsite/uploads/ckeditor/1550041319.jpg" style="width: 668px; height: 868px;" /></span></p>
+
+
+</p>
+                        
+                                                <h4>Training Pedagogy</h4>
+                        <p>	<ul>
+								<li >Active Learning   Student centric learning model</li>
+								<li >Simulation Based Learning   Lab Work (ILT) using LMS</li>
+								<li >Collaborative learning and Periodic Assessment</li>
+								<li >Encouraging students to utilize acquired skills in useful projects</li>
+							</ul>
+</p>
+                        
+                                                <h4>Learning With LMS (ilearn) </h4>
+                        <p><h4>RS-CIT registered student logs in RKCLs proprietary MYLMS application using user id and password as provided by our ITGK</h4>
+
+<p><img alt="" src="http://www.rkcl.in/myrkclwebsite/uploads/ckeditor/1547702052.png" style="width: 1000px; height: 636px;" /></p>
+
+<p>&nbsp;</p>
+
+<h4><span>A sample dashboard under Student login is shown below a student has to explore and complete both Content &amp; Assessment.</span></h4>
+
+<p><img alt="" src="http://www.rkcl.in/myrkclwebsite/uploads/ckeditor/1547702087.png" style="width: 1000px; height: 762px;" /></p>
+
+<h4><span>A sample content page for a chapter is shown below</span></h4>
+
+<p><span><img alt="" src="http://www.rkcl.in/myrkclwebsite/uploads/ckeditor/1547702111.png" style="width: 1000px; height: 764px;" /></span></p>
+
+<h4><span>Content topics and sub topics are shown in a seamless way with voice over as displayed below</span></h4>
+
+<p><span><img alt="" src="http://www.rkcl.in/myrkclwebsite/uploads/ckeditor/1547702133.png" style="width: 1000px; height: 770px;" /></span></p>
+
+<h4><span>Once a learner completes Content, he/she can proceed to Assessment section</span></h4>
+
+<p><span><img alt="" src="http://www.rkcl.in/myrkclwebsite/uploads/ckeditor/1547702155.png" style="width: 1000px; height: 762px;" /></span></p>
+
+<h4><span>A typical assessment type which a learner has to attempt is shown below</span></h4>
+
+<p><span><img alt="" src="http://www.rkcl.in/myrkclwebsite/uploads/ckeditor/1547702176.png" style="width: 1000px; height: 667px;" /></span></p>
+
+<h4><span>To check the assessment score, a learner can click on Score link as shown below</span></h4>
+
+<p><span><img alt="" src="http://www.rkcl.in/myrkclwebsite/uploads/ckeditor/1547702192.png" style="width: 1000px; height: 667px;" /></span></p>
+</p>
+                        
+                        			
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+  
+</body>  
+</html>

@@ -18,12 +18,49 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+  <link href="css/site.css" rel="stylesheet" type="text/css" />
   <!-- Custom styles for this template -->
   <link href="css/landing-page.min.css" rel="stylesheet">
   
   
   <style>
+  
+  .alert2{
+     padding : .5rem .25rem !important;
+	 margin-bottom : .1rem !important;
+  }
+  
+  .holder { 
+  background-color:#ccc;
+  width:300px;
+  height:280px;
+  overflow:hidden;
+  
+  font-family:Helvetica;
+}
+.holder .mask {
+  position: relative;
+  left: 0px;
+  top: 10px;
+  width:300px;
+  height:270px;
+  overflow: hidden;
+}
+.holder ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  position: relative;
+}
+.holder ul li {
+  
+}
+.holder ul li a {
+  color:darkred;
+  text-decoration:none;
+}
+  
+  
   .nav {
   background-color: #f8f8f8;
   border-bottom: 1px solid #ececec;
@@ -229,6 +266,21 @@
 }
 
   </style>
+  
+  <style type="text/css">
+
+#marqueecontainer{
+position: relative;
+width: 200px; /*marquee width */
+height: 200px; /*marquee height */
+background-color: white;
+overflow: hidden;
+border: 3px solid orange;
+padding: 2px;
+padding-left: 4px;
+}
+
+</style>
 
 </head>
 
@@ -287,7 +339,7 @@
   </header>
 
   <!-- Icons Grid -->
-  <section class="features-icons bg-light text-center">
+  <section class="features-icons bg-light text-center" style="padding:2rem">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -312,16 +364,31 @@ DigiPay &nbsp; &nbsp;  <a href="https://digitalseva.csc.gov.in/" >more ... </a><
               <i class="icon-screen-desktop m-auto text-primary"></i>
             </div>
             <h3>Computer Courses</h3>
-            <p class="lead mb-0">RSCIT, TALLY, RSCFA, BASIC, CCC, DTP, 'O'-LEVEL  &nbsp; &nbsp; <a href="http://amritacomputer.com/rscit.html" >more ... </a></p></p>
+            <p class="lead mb-0">RSCIT, TALLY, RSCFA, BASIC, CCC, DTP, 'O'-LEVEL&nbsp; &nbsp; <a href="http://amritacomputer.com/rscit.html" >more ... </a> </p></p>
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-check m-auto text-primary"></i>
-            </div>
-            <h3>Other Services</h3>
-            <p class="lead mb-0"> Income Tax, Sales Tax, GST Related Services, </p>
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3" >
+            
+			<div class="holder">
+			<ul id="ticker01">
+								<li><div class="alert alert-primary alert2" role="alert"><a href="http://www.freejobalert.com/">New Goverment Jobs Alert</a></div></li>
+								<li><div class="alert alert-primary alert2" role="alert"><a href="#">New RS-CIT Batch Started</a></li>
+								<li><div class="alert alert-primary alert2" role="alert"><a href="#">New O-Level Batch Started</a></li>
+								<li><div class="alert alert-primary alert2" role="alert"><a href="#">RS-CFA Batch Starting soon</a></li>
+								<li><div class="alert alert-primary alert2" role="alert"><a href="#">RS-CIT Result Delared</a></li>
+								<li><div class="alert alert-primary alert2" role="alert"><a href="#">Tally Batch Starting Soon</a></div></li>
+								<li><div class="alert alert-primary alert2" role="alert"><a href="#">E-mitra Services has been Started on Amrita Computer</a></div></li>
+								<li><div class="alert alert-primary alert2" role="alert"><a href="#">PGDCA Batch Starting Soon</a></div></li>
+								<li><div class="alert alert-primary alert2" role="alert"><a href="#">C, C++ Batch Starting Soon</a></div></li>
+								<li><div class="alert alert-primary alert2" role="alert"><a href="#">PHP Batch Starting Soon</a></div></li>
+								<li><div class="alert alert-primary alert2" role="alert"><a href="#">Android App Development Trainning Starting Soon </a></div></li>
+								<li><div class="alert alert-primary alert2" role="alert"><a href="#">NodeJs, AngularJs Batches Starting Soon</a></div></li>
+					</ul>
+			</div>
+
+			
+			
           </div>
         </div>
       </div>
@@ -475,8 +542,9 @@ RS-CIT Course Duration is 3 Months or 132 Hours (2 hours per day 1 Hour Practica
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   
+   
   <script>
-  
+   
 $(function () {
   'use strict';
   // Start navbar 
@@ -502,8 +570,52 @@ $(function () {
       $("#" + $(this).data('toggle')).slideToggle(300);
     });
   }());
+  
+  
+  
+  
+  
+});
+
+jQuery.fn.liScroll = function(settings) {
+	settings = jQuery.extend({
+		travelocity: 0.03
+		}, settings);		
+		return this.each(function(){
+				var $strip = jQuery(this);
+				$strip.addClass("newsticker")
+				var stripHeight = 1;
+				$strip.find("li").each(function(i){
+					stripHeight += jQuery(this, i).outerHeight(true); // thanks to Michael Haszprunar and Fabien Volpi
+				});
+				var $mask = $strip.wrap("<div class='mask'></div>");
+				var $tickercontainer = $strip.parent().wrap("<div class='tickercontainer'></div>");								
+				var containerHeight = $strip.parent().parent().height();	//a.k.a. 'mask' width 	
+				$strip.height(stripHeight);			
+				var totalTravel = stripHeight;
+				var defTiming = totalTravel/settings.travelocity;	// thanks to Scott Waye		
+				function scrollnews(spazio, tempo){
+				$strip.animate({top: '-='+ spazio}, tempo, "linear", function(){$strip.css("top", containerHeight); scrollnews(totalTravel, defTiming);});
+				}
+				scrollnews(totalTravel, defTiming);				
+				$strip.hover(function(){
+				  jQuery(this).stop();
+				},
+				function(){
+				  var offset = jQuery(this).offset();
+				  var residualSpace = offset.top + stripHeight;
+				  var residualTime = residualSpace/settings.travelocity;
+				  scrollnews(residualSpace, residualTime);
+				});			
+		});	
+};
+
+$(function(){
+    $("ul#ticker01").liScroll();
 });
   </script>
+  
+ 
 
 </body>
 

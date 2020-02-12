@@ -314,13 +314,11 @@
                 <a class="dropdown-item" href="rscit.html">RS-CIT </a>
                 <a class="dropdown-item" href="rscfa.html">RS-CFA</a>
                 <a class="dropdown-item" href="csc.html">CSC </a>
-				<a class="dropdown-item" href="e-mitra.html">E-MITRA </a>
-				<a class="dropdown-item" href="https://www.vmou.ac.in/notice/540">RSCIT MODAL PAPER</a>
+				<a class="dropdown-item" href="e-mitra.html">E-Mitra </a>
               </div>
 			  </li>
-		<li class="nav-item"><a href="http://www.freejobalert.com/" class="nav-link" >LATEST JOBS</a></li>		  	  	  
 		  <li class="nav-item"><a href="gallery.html" class="nav-link" >GALLERY</a></li>	  
-          <li class="nav-item"><a href="contact.html" class="nav-link" >CONTACT US</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" >CONTACT US</a></li>
 		  <li class="nav-item"><a href="#" class="nav-link" > SIGN IN </a></li>
         </ul>
       </div>
@@ -344,101 +342,53 @@
 
 
         <div class="row">
-		
-		     <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="img/chet4.jpg" class="img-responsive" style="width:367px;height:245px;">
-            </div>		
-		
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="img/anual1.jpg" class="img-responsive" style="width:367px">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="img/anual2.jpg" class="img-responsive" style="width:367px">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="img/anual5.jpg" class="img-responsive" style="width:367px">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="img/anual10.jpg" class="img-responsive" style="width:367px">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="img/anual33.jpg" class="img-responsive" style="width:367px">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="img/anual21.jpg" class="img-responsive" style="width:367px">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="img/anual23.jpg" class="img-responsive" style="width:367px">
-            </div>
-			
-			 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="img/che4.jpg" class="img-responsive" style="width:367px;height:245px;">
-            </div>	
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="img/anual32.jpg" class="img-responsive" style="width:367px">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="img/anual12.jpg" class="img-responsive" style="width:367px">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="img/anual34.jpg" class="img-responsive" style="width:367px">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="img/anual43.jpg" class="img-responsive" style="width:367px">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="img/anual45.jpg" class="img-responsive" style="width:367px">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
-			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="img/anual65.jpg" class="img-responsive" style="width:367px">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="img/anual87.jpg" class="img-responsive" style="width:367px">
-            </div>
-			
-			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="img/testimonials-2.jpg" class="img-responsive" style="width:367px;height:245px;">
-            </div>
-			
-			
-			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="img/anual90.jpg" class="img-responsive" style="width:367px">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="img/anual332.jpg" class="img-responsive" style="width:367px">
-            </div>
-			
-			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="img/anualfh.jpg" class="img-responsive" style="width:367px">
-            </div>
-
-			            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="img/anualhg.jpg" class="img-responsive" style="width:367px">
-            </div>
-			
-			
-			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="img/chet1.jpg" class="img-responsive" style="width:367px;height:245px;">
-            </div>
-			        
-			        
-			
-
-			
-					
         </div>
     </div>
 </section>

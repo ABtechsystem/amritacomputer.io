@@ -228,11 +228,63 @@
 
 }
 
-.rscfabanner {
+.contact {
     width: 100%;
     height: 223px;
-    background: url(img/RSCFA.jpg) 50% 0% no-repeat;
+    background: url(img/Contact-us-banner.jpg) 50% 0% no-repeat;
  
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 48%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 
@@ -265,7 +317,17 @@
 				<a class="dropdown-item" href="https://www.vmou.ac.in/notice/540">RSCIT MODAL PAPER</a>
               </div>
 			  </li>
-		  <li class="nav-item"><a href="http://www.freejobalert.com/" class="nav-link" >LATEST JOBS</a></li>		  	  	  
+		  
+		  <li class="nav-item dropdown">
+		     <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" >JOBS</a> 
+		      <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink1">
+                <a href="http://www.freejobalert.com/" class="nav-link" >Free Job Alerts</a>
+                <a href="https://www.sarkarinaukridaily.in/" class="nav-link" >Sarkari Naukari</a>
+                
+              </div>			        
+		  </li>		  	  	  
+		  
 		  <li class="nav-item"><a href="gallery.html" class="nav-link" >GALLERY</a></li>	  
           <li class="nav-item"><a href="contact.html" class="nav-link" >CONTACT US</a></li>
 		  <li class="nav-item"><a href="#" class="nav-link" > SIGN IN </a></li>
@@ -274,21 +336,49 @@
     </div>
   </nav>
 
-<div class="rscfabanner">
+<div class="contact" style="padding-top:60px;">
     <div id="triangle-bottomleft" class="persdeta">
-       
+        <div class="container">
+    <div class="row">
+        <div class="col-md-12"  >
+         <h1 class="lg-text" style="color:Orange">Contact Us</h1>
+         
+       </div>
+    </div>
+</div>
     </div>
 </div>
 
     <div class="container">
         <div class="row">
-            <div class="enquiry MT3" style="margin-top:20px;">
+            <div class="column" style="margin-top:20px;">
 
-<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=shiv%20public%20school%20jodhpur&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Google Maps Generator by <a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>                        
-SHIV PUBLIC SCH KE SAMNE NARSINGH JI KI PAYU MAGRA PUNJLA ROAD JODHPUR 342304 Jodhpur 094137 45425
+                <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=shiv%20public%20school%20jodhpur&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                Google Maps </div>
+				<style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+				</div>                        
 
-						
-                  </div>
+                </div>
+				  
+				<div class="column">
+						<form action="/action_page.php">
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+						<label for="country">Country</label>
+						<select id="country" name="country">
+						<option value="australia">Australia</option>
+						<option value="canada">Canada</option>
+						<option value="usa">USA</option>
+						</select>
+						<label for="subject">Subject</label>
+						<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+						<input type="submit" value="Submit">
+						</form>
+				</div>
+			
         </div>
     </div>
 	
